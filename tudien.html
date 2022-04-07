@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>...</title>
+</head>
+<body>
+<script>
+    let word = prompt();
+    word.toString();
+    let result = word.toLowerCase();
+    let eng = ['hello', 'goodbye', 'thanks', 'sorry'];
+    console.log(eng[1])
+    let viet = ['xin chào', 'tạm biệt', 'cảm ơn', 'xin lỗi'];
+    for (i = 0; i < eng.length; i++) {
+        if (result == eng[i]) {
+            alert(viet[i]);
+            break;
+        }
+        else if (result == viet[i]) {
+            alert(eng[i]);
+            break;
+        }
+        else{
+            alert('no word!');
+            break;
+        }
+    }
+</script>
+</body>
+</html>

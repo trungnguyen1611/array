@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>...</title>
+    <link rel="stylesheet" href="fakingtextareaontyping.css">
+</head>
+<body>
+<p><strong><i>Typing Anything</i></strong></p>
+<textarea id="text" rows="10" cols="70"></textarea>
+<script>
+    let type = document.getElementById("text");
+    type.onkeyup = troll;
+    let count = 0;
+    let result = 'TÔI LÀ MỘT ĐỨA NGỐC!!';
+
+    function troll() {
+        document.getElementById("text").value = '';
+        count++;
+        for (i = 0; i < count; i++) {
+            document.getElementById("text").value += result[i];
+        }
+        if (count >= result.length) {
+            count = 0;
+        }
+    }
+
+</script>
+</body>
+</html>

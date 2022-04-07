@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>...</title>
+</head>
+<body>
+<script>
+    let str = 'The Quick Brown Fox';
+    let result=[];
+    let lower = 'abcdefghijklmnopqrstuvwxyz'
+    for (i = 0; i < str.length; i++) {
+        if (lower.indexOf(str[i]) == -1) {
+            result+=str[i].toLowerCase();
+        } else {
+            result+=str[i].toUpperCase();
+        }
+    }
+    console.log(result);
+</script>
+</body>
+</html>

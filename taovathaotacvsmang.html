@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>...</title>
+</head>
+<body>
+<strong>Sample Screen:</strong><br>
+<input type="text" width="200px" id="element">
+<input type="button" onclick="add()" value="Add" id="add">
+<input type="button" onclick="display()" value="Display" id="display">
+<script>
+    let array= [];
+
+    function add() {
+        let x=document.getElementById("element").value
+        array.push(x);
+        console.log(array);
+        document.getElementById('element').value = '';
+    }
+    function display() {
+        alert(`array=[${array}]`);
+    }
+
+</script>
+</body>
+</html>
